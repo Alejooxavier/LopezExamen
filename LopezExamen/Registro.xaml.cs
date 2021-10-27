@@ -38,7 +38,7 @@ namespace LopezExamen
                     }
                     else
                     {
-                        double pagoMensual = (((1800 - monto) / 3) * 1.05);
+                        double pagoMensual = (((1800 - monto) / 3) * 1.05) * 3;
                         txtPagoMensual.Text = pagoMensual.ToString();
                     }
                 }
