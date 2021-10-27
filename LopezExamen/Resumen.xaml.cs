@@ -12,13 +12,13 @@ namespace LopezExamen
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        public Resumen(string usuario, string nombreEstudiante, string montoInicial, string pagoMensual)
+        public Resumen(string usuario, string nombreEstudiante, string montoInicial, string total)
         {
             InitializeComponent();
             lblUsuario.Text = usuario;
             lblNombreEstudiante.Text = "Estudiante registrado: "+ nombreEstudiante;
             lblMontoInicial.Text = "Pago inicial realizado: "+ montoInicial;
-            lblPagoMensual.Text = "Total a pagar: "+ pagoMensual;
+            lblTotal.Text = "Total a pagar: "+ total;
         }
     }
 }

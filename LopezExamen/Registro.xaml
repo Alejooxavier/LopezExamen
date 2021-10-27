@@ -30,9 +30,11 @@
                 <Label Text="Monto Inicial:" Grid.Row="1" Grid.Column="0"/>
                 <Entry x:Name="txtMontoInicial" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
 
-                <Label Text="Pago Mensual: " Grid.Row="2" Grid.Column="0"/>
-                <Entry x:Name="txtPagoMensual" IsReadOnly="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Cuota (+5% interés): " Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoMensual" IsReadOnly="True" ClearButtonVisibility="WhileEditing" Grid.Row="2" Grid.Column="1"/>
 
+                <Label Text="Total a pagar: " Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" IsReadOnly="True" ClearButtonVisibility="WhileEditing" Grid.Row="3" Grid.Column="1"/>
 
             </Grid>
 

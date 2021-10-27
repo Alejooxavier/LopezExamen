@@ -23,7 +23,7 @@
                 <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0"/>
                 <Label x:Name="lblNombreEstudiante" Grid.Row="1" Grid.Column="0"/>
                 <Label x:Name="lblMontoInicial" Grid.Row="2" Grid.Column="0"/>
-                <Label x:Name="lblPagoMensual" Grid.Row="3" Grid.Column="0"/>
+                <Label x:Name="lblTotal" Grid.Row="3" Grid.Column="0"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

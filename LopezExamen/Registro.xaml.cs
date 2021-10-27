@@ -38,8 +38,10 @@ namespace LopezExamen
                     }
                     else
                     {
-                        double pagoMensual = (((1800 - monto) / 3) * 1.05) * 3;
+                        double pagoMensual = (((1800 - monto) / 3) + (1800 * 0.05));
                         txtPagoMensual.Text = pagoMensual.ToString();
+                        double total = pagoMensual*3;
+                        txtTotal.Text = total.ToString();
                     }
                 }
             }
@@ -58,9 +60,9 @@ namespace LopezExamen
                 string usuario = lblUsuario.Text;
                 string nombreEstudiante = txtNombreEstudiante.Text;
                 string montoInicial = txtMontoInicial.Text;
-                string pagoMensual = txtPagoMensual.Text;
+                string total = txtTotal.Text;
 
-                await Navigation.PushAsync(new Resumen(usuario, nombreEstudiante, montoInicial, pagoMensual));
+                await Navigation.PushAsync(new Resumen(usuario, nombreEstudiante, montoInicial, total));
             }
             catch (Exception ex)
             {
