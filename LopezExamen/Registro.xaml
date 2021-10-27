@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LopezExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+               HeightRequest="50" />
+            <Frame BackgroundColor="#2196F3" Padding="5" CornerRadius="0">
+                <Label Text="Ventana de registro de estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+            <Label x:Name="lblUsuario"/>
+            
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre del estudiante:" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombreEstudiante" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Monto Inicial:" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMontoInicial" ClearButtonVisibility="WhileEditing" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Pago Mensual: " Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoMensual" IsReadOnly="True" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="2" Grid.Column="1"/>
+
+
+            </Grid>
+
+            <Button x:Name="btnCalcular" Text="Calcular Pagos" Clicked="btnCalcular_Clicked" BackgroundColor="#2c3e50" Margin="5"/>
+            <Button x:Name="btnGuardar" Text="Guadar y enviar datos" Clicked="btnGuardar_Clicked" BackgroundColor="#2c3e50" Margin="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LopezExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="15" CornerRadius="0">
+                <Label Text="Ventana de resumen" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblNombreEstudiante" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblMontoInicial" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblPagoMensual" Grid.Row="3" Grid.Column="0"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
