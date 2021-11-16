@@ -30,7 +30,13 @@ namespace LopezExamen
                 }
                 else
                 {
-                   await DisplayAlert("Mensaje de advertencia", "Usuario o contraseña incorrectos", "ok");
+                    //await DisplayAlert("Mensaje de advertencia", "Usuario o contraseña incorrectos", "ok");
+
+                    //TOAST
+
+                    var mensaje = "Usuario o contraseña incorrectos";
+                    DependencyService.Get<Mensaje>().longAlert(mensaje);
+
                 }
                 
             }
